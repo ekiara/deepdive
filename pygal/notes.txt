@@ -1,0 +1,12 @@
+pygal
+----------------------------------------
+
+
+URLs
+----------------------------------------
+http://www.pygal.org/en/latest/
+https://github.com/Kozea/pygal/blob/master/docs/index.rst
+
+
+Tutorials
+----------------------------------------
