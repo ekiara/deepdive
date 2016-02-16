@@ -1,0 +1,12 @@
+Important URLs
+----------------------------------------
+
+https://plot.ly/python/
+https://plot.ly/products/cloud/
+https://plot.ly/python/filled-chord-diagram/o
+https://plot.ly/python/plot-data-from-csv/
+https://plot.ly/python/static-image-export/
+
+
+Tutorials
+----------------------------------------
