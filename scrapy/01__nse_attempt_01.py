@@ -1,20 +1,20 @@
 """
 
-first_example.py
+nse_attempt_01.py
 
 (resource "http://scrapy.org/")
 
 """
 import scrapy
 
-class BlogScrapinghubSpider(scrapy.Spider):
+
+class NSESpider(scrapy.Spider):
     """
-    BlogScrapinghubSpider
+    NSESpider
 
     """
-    name = 'blogscrapinghubspider'
-    start_urls = ['https://blog.scrapinghub.com']
-
+    name = 'nsespider'
+    start_urls = ['https://www.nse.co.ke/market-statistics/market-snapshot.html']
 
     def parse(self, response):
         """
@@ -23,7 +23,6 @@ class BlogScrapinghubSpider(scrapy.Spider):
         """
         for url in response.css('ul li a::attr("href")').re('.*/category/.*'):
             yield scrapy.Request(response.urljoin(url), self.parse_titles)
-
 
     def parse_titles(self, response):
         """

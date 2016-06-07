@@ -1,0 +1,8 @@
+from apps.analytics.models import *
+i = Identity.objects.get(number='22227051')
+ai = AccountIdentity.objects.filter(identity=i)
+print(ai.first().account_id)
+j = Account.objects.get(id=1086824)
+print(j.submitted_by, j.account_number, j.created_at, j.is_active)
+ai = AccountInfo.objects.filter(account=j)
+for x in ai: print(x.id, x.loaded_at, x.days_in_arrears)
